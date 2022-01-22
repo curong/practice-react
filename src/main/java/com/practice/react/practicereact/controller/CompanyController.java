@@ -1,5 +1,8 @@
-package com.practice.react.practicereact;
+package com.practice.react.practicereact.controller;
 
+import com.practice.react.practicereact.dto.Company;
+import com.practice.react.practicereact.mapper.CompanyMapper;
+import com.practice.react.practicereact.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

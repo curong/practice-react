@@ -1,5 +1,6 @@
-package com.practice.react.practicereact;
+package com.practice.react.practicereact.mapper;
 
+import com.practice.react.practicereact.dto.Company;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public interface CompanyMapper {
         @Result(property = "pid", column = "pid"),
         @Result(property = "name", column = "company_name"),
         @Result(property = "address", column = "company_address"),
-        @Result(property = "employeeList", column = "pid", many = @Many(select="com.practice.react.practicereact.EmployeeMapper.getByCompanyPid"))
+        @Result(property = "employeeList", column = "pid", many = @Many(select="com.practice.react.practicereact.mapper.EmployeeMapper.getByCompanyPid"))
     })
     List<Company> getAll();
 

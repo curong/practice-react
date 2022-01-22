@@ -1,5 +1,6 @@
-package com.practice.react.practicereact;
+package com.practice.react.practicereact.mapper;
 
+import com.practice.react.practicereact.dto.Employee;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

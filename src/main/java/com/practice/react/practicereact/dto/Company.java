@@ -1,4 +1,4 @@
-package com.practice.react.practicereact;
+package com.practice.react.practicereact.dto;
 
 import java.util.List;
 
