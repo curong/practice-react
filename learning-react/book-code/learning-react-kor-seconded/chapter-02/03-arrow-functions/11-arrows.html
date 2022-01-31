@@ -14,14 +14,12 @@
     // 언제 화살표 함수를 사용해야 할지 알고 사용할 것
 
     var gangwon = {
-      resorts: ["용평","평창","강촌","강릉","홍천"],
-      print: function(delay=1000) {
-
-        setTimeout(() => {
-          console.log(this === window)
-        }, delay)
-
-      }
+        resorts: ["용평", "평창", "강촌", "강릉", "홍천"],
+        print: function (delay = 1000) {
+            setTimeout(() => {
+                console.log(this) // <- 책의 내용과는 다르게 resorts를 출력시켜준다.
+            }, delay)
+        }
     }
 
     gangwon.print(); // true

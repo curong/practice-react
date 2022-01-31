@@ -12,9 +12,20 @@
 <script type="text/babel">
 
     fetch("https://api.randomuser.me/?nat=US&results=10")
-      .then(response => response.json())
-      .then(members => console.log(members))
-      .catch(err => console.error(err))
+        .then(response => response.json())
+        .then(members => console.log(members))
+        .catch(err => console.error(err))
+
+    const getFakePerson = async () => {
+        try {
+            let res = await fetch("https://api.randomuser.me/?nat=US&results=2000")
+            let {results} = res.json();
+            console.log(results)
+        } catch (error) {
+            console.error(error);f
+        }
+    }
+    getFakePerson();
 
 </script>
 </body>
