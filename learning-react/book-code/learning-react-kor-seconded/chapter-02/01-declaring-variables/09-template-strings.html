@@ -67,7 +67,7 @@
         },
         testPrint: (delay = 500) => { // 프로퍼티를 화살표 함수로 바꾸면 this가 window 객체가 되는것을 의미.
             setTimeout(() => {
-                console.log(this.gangwon.resorts.join(","))
+                console.log(gangwon.resorts.join(","))
             }, delay);
         }
     }
